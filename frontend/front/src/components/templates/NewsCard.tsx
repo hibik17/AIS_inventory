@@ -33,9 +33,7 @@ export const NewsCard: VFC<{ response: ResponseType }> = memo(
           <h1 className="font-bold text-gray-700 text-4xl text">
             {response.news.title}
           </h1>
-          <p className="text-500 text-sm text-lg mt-4 mb-10">
-            {response.news.summary}
-          </p>
+          <p className="text-500 text-sm mt-4 mb-10">{response.news.summary}</p>
           <Link to={response.news.url} className="pt-16 text-blue-700 ">
             ニュースはこちら
           </Link>
@@ -50,5 +48,5 @@ export const NewsCard: VFC<{ response: ResponseType }> = memo(
         />
       </div>
     );
-  },
+  }
 );

@@ -39,7 +39,6 @@ def predict_similar_book_by_news(news):
 
     return explanation_dict
 
-
 def parse_text(text, mecab_tag):
     lexemes = []
 
